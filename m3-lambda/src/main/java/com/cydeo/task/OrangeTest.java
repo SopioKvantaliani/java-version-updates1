@@ -17,8 +17,10 @@ public class OrangeTest {
         inventory.add(new Orange(200,Color.GREEN));
         inventory.add(new Orange(50,Color.RED));
 
-        OrangeFormatter orangeLambda = orange -> "An orange of" + orange.getWeight() + "g";
+        OrangeFormatter orangeLambda = orange -> "An orange of " + orange.getWeight() + "g"; //Interface is type of Lambda (OrangeFormatter);
+        //Method signature (Return Type and Object) should be same in Lambda.
         prettyPrintApple(inventory,orangeLambda);
+
 
         prettyPrintApple(inventory,orange -> "An orange of" + orange.getWeight() + "g");
 
@@ -27,7 +29,7 @@ public class OrangeTest {
         OrangeFormatter fancyFormatter = orange -> {
             String ch = orange.getWeight() > 200 ? "Heavy" : "Light";
             return  "A" + ch + " " + orange.getColor() + " orange";
-        };
+        }; //why curly braces in Lambda. It's gonna be more than one statement.
 
         prettyPrintApple(inventory,fancyFormatter);
 

@@ -1,0 +1,24 @@
+
+Static Methods
+
+Static methods can be called without the object of the class.
+Static methods are associated with the class.
+Static methods can only access static attributes of the class
+A static method is declared with the static keyword.
+The static method will exist as a single copy for a class.
+
+Instance Methods
+
+Instance methods require an object of the class.
+Instance methods are associated with the objects.
+Instance methods can access all the attributes of the class.
+Instance methods do not require any keyword.
+The instance method exists as multiple copies depending on the number of instances of the class.
+
+Static Keyword in Java is used in the following ways:
+
+Static Variables = one copy of the static variable is shared by all instances of the class.
+Static Methods
+Static Block = are used to initialise the static data members or static variables.
+Static Nested Classes = We can define a class as static; however, the class must be a nested class only i.e.,
+                        the class must be present within another class before we can declare it as static.

@@ -1,0 +1,115 @@
+1. Difference between method and constructor?
+    - Constructor should have class name; method can have any name;
+    - Method can return value; Constructor can not;
+    - We call method with the method name; But we call constructor with "new" key word;
+    - A constructor is used to initialize the variables of a Class; A method is used to define the
+                                                                    behavior/functionalities of an object
+    - Java compiler provides a default constructor; There is no existence of default method.
+
+2. Stream  = Flowing something;
+
+3. Behavior Parameterization
+   - is the ability of a method to receive multiple different behavior as
+     its parameter and use them internally to accomplish the task.
+
+4. Why is Java so popular?
+ - Open Source
+    - It is open source, which implies that it it free to use, Any developer with a working knowledge
+      of Java can use this free platform to create apps.
+ - Built in security
+    - It includes high level concurrency tools and packages also take care of security.
+ - Strong Community
+    - The main reason for Java's popularity is its active and supportive community.
+      So, if we ever get trapped in programming, other programmers or the Java community can
+      help assist us and solve a problem.
+ - Excellent Documentation
+    - Its documentation is well-defined and provides complete guide to help and solve any problems.
+ - Powerful set of Programming Tools
+    - IDE (Integrated Development Environment) is one of Java's most important feature.
+      The Java IDE provides a comprehensive editors, debuggers, and collection of automation tools;
+    - The three most popular Java IDEs are Eclipse, IntelliJ IDEA, and NetBeans
+    - In terms of tools, Java provides Maven for developing Java applications.
+    - JConsole and Visual VM work for monitoring Heap utilization
+    - Jenkins use for Continuous Integration and Delivery in Java.
+
+5. What are different kind of variables defined in Java?
+    - Variable is a container to store a data value. In other words a variable
+      is a memory location name for any data.
+    - There are 4 kind of variables in Java:
+          = Local Variable
+                   = Local variables are declared in a blocks, methods, or constructors.
+                   = Local variables are created when the block, method, or constructors is started and will be
+                     destroyed once it exits the block, method or constructor.
+          = Class (Static) Variable
+                   = It is declared with the "static" keyword in a class.
+                   = A single copy of each static variable is shared by all instances of the class.
+                   = Static variables are stored in static memory.
+                   = Default values of Instance variables:
+                             = 0 for numbers;
+                             = false/true for boolean;
+                             = null for object;
+                   = Static variables can be accessed by calling with the class name;
+                   = Static variables are initialized only one time.
+                   = This variables will be initialized first, before the initialization of any instance variables.
+          = Instance Variable
+                   = Instance variable are declared outside a method. They are declared in a class.
+                   = When object is created the instance variables are created and when object destroyed
+                     instance variable is also destroyed.
+                   = For instance variables access modifiers can be given.
+                   = Instance variables are visible for all methods, constructors, and blocks in the class.
+                   = Default values of Instance variables:
+                            = 0 for numbers;
+                            = false/true for boolean;
+                            = null for object;
+          = (and Parameter can be also treated as local variable);
+
+6. What is class?
+    - A class is a Template, blueprint of an object. A class defines the state and
+       behavior that an object can exhibit.
+
+6. What is object?
+    - Object is state, behavior of class;
+    - Objects are the instance variables of class.
+    - Objects are stored through references.
+    - Objects are created with new key word.
+    - Every object ahs its own memory.
+
+
+7. What is state and behavior of an object?
+   - Each object has state, behavior and identity.
+   - State of an object is stored in field (variables), while methods (functions) display the object's behavior.
+   - e.g Cat's state includes its color, size, gender, age, while its behavior is sleeping, purring, meowing for food.
+   - The identity is a characteristic used to uniquely identify that object
+            = such a random ID number, or an address in memory, ID etc.
+
+8. What is OOP (Object Oriented Programming)?
+   - OOP is methodology or paradigm to design a program using classes and objects.
+   - OOP is a way of writing computer programs using "objects" to stand for data and methods.
+
+9. What are the key principles of OOP?
+    - Inheritance
+    - Encapsulation
+    - Polymorphism
+    - Abstraction
+
+10. What do JVM, JRE and JDK stand for?
+11. How do you swap two numbers?
+12. Difference Between Array and ArrayList?
+13. What is String in Java?
+14. Could you explain static vs non-static in Java?
+15. Could you explain method overloading?
+16. Could you explain method overriding?
+17. What are difference between method overloading and overriding?
+18. What is primitive type casting?
+19. WildCard?
+20. Anonymous class = Without providing class type giving a implementation;
+
+21. what is the difference between flatMap() vs map()?
+    - map () takes Stream <T> as input and returns Stream <R>;
+    - map () is mapper function produces single values for each input value.
+      It is called One-To-One mapping. In one data it will do one action and return that data, one by one.
+      e.g Stream.of (1, 2, 3, 4) returns [1, 2, 3, 4]
+
+    -flatMap() takes Stream<Stream<T>> (takes Stream of Stream) as an input and return Stream <R>.
+     It is called One-To-Many mapping
+     e.g [[1, 2],[3,4,] [4,5],[6,7], [8,9]] returns [1,2, 3, 4, 5, 6, 7, 8, 9] flatMap()

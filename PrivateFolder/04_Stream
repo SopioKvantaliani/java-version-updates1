@@ -1,0 +1,31 @@
+1. Stream is a sequence of elements from a source that supports data processing operations.
+    = Streams are updates to the Java API that let us manipulate collections of data in a new way (declarative way);
+    = Stream Pipeline is the operations that run on a stream to produce a result;
+    = All the Streams work with Lambda, that's why Java tries to  behavioural parameterization structure so much easier;
+
+2. Stream Pipeline = Stream data flowing inside, and inside we do certain manipulation;
+
+3. Formula of Stream Pipeline:
+    - Stream Source (mostly ArrayList or Collection)
+    - Create Stream (put something inside);
+    - Intermediate Operations (when data flowing inside we can do certain operations on that)
+    - Terminal Operation (when flowing finishes we need to exit data outside);
+    - Operation result;
+
+4. Steps we came to Stream:
+   -> Behaviour Parameterization. why? - Implementing different actions -> OOP
+   -> Lambda: Functional Programming //We need Functional Interface, otherwise we can not pass the code;
+   -> Stream: Functional Programming
+
+5. We can create bunch of stream instances out of stream, because the source does not change.
+
+6. what is the difference between flatMap() vs map()?
+       - map () takes Stream <T> as input and returns Stream <R>;
+       - map () is mapper function produces single values for each input value.
+         It is called One-To-One mapping. In one data it will do one action and return that data, one by one.
+         e.g Stream.of (1, 2, 3, 4) returns [1, 2, 3, 4]
+         example: doubling number and still flowing in the stream
+
+       -flatMap() takes Stream<Stream<T>> (takes Stream of Stream) as an input and return Stream <R>.
+        It is called One-To-Many mapping
+        e.g [[1, 2],[3,4,] [4,5],[6,7], [8,9]] returns [1,2, 3, 4, 5, 6, 7, 8, 9] flatMap()
