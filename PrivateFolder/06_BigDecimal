@@ -1,0 +1,6 @@
+BigDecimal:
+
+BigDecimal:
+         =BigDecimal is class;
+         =It implements Comparable, which means that we can override those methods;
+         =BigDecimal extends number class;

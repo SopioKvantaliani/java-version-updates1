@@ -1,1 +1,20 @@
 1. When you write code, should be understandable;
+2. Everything in Java starts, from creating variables; Concept is the same;
+examples:
+    String str = "Apple"; //Type Primitive, reference name, value = String
+    Dish dish = new Dish(); //Class Type,reference name, value = dish object
+    Stream<Dish> dishStream = DishData.getAll().stream(); //Stream Interface Type, reference name, value = stream
+
+We are following same structure.
+
+3. Reactive Programming (Asynchronous programming):
+         - in Java is a technique for parallel programming  that lets teams distribute
+           work and build application features separately from the primary application thread.
+
+4. Interview Preparation:
+   Cheat Sheet = Method and what that method does. Notes for us to print and put visible to review
+   Chapter Knowledge Checklist  = Review and if you know well check in the list
+   FlashCards
+   Stream Task
+
+5. Utility Class = Static Method = We call method directly through class name;

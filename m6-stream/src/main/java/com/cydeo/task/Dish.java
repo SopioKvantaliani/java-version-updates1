@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-         public class Dish {
+public class Dish {
          private String name;
          private boolean vegetarian;
          private int calories;

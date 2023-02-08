@@ -29,3 +29,19 @@
        -flatMap() takes Stream<Stream<T>> (takes Stream of Stream) as an input and return Stream <R>.
         It is called One-To-Many mapping
         e.g [[1, 2],[3,4,] [4,5],[6,7], [8,9]] returns [1,2, 3, 4, 5, 6, 7, 8, 9] flatMap()
+
+7. How to create Stream?
+    - There are two different ways to create Stream instance:
+        - Stream.of()
+        - .stream() (collection name + .stream()
+    - After putting collection in the stream and stream in the flow, we start implementing intermittent
+    - Terminal Operators
+         = Collectors (is terminal operators, but different)
+
+8. Terminal Operators:
+
+9. Collector:
+     - Java Collectors is a utility class that provides many useful implementations of the collector interface.
+     - The Collector implementation is used with the Stream.collect() method.
+     - The Collector is a final class and all the methods are static that return the Collector instance.
+

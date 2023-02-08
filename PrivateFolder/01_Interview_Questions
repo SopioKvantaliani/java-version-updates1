@@ -113,3 +113,11 @@
     -flatMap() takes Stream<Stream<T>> (takes Stream of Stream) as an input and return Stream <R>.
      It is called One-To-Many mapping
      e.g [[1, 2],[3,4,] [4,5],[6,7], [8,9]] returns [1,2, 3, 4, 5, 6, 7, 8, 9] flatMap()
+22. What is double column operator?
+    - We use double column operator when we call method() directly.
+    -e.g System.out::println
+
+23. What is the different findAny() and findFirst() (Stream methods)?
+    - findFirst() method always gives you first matching one. It will be always same despite the fact how many times we run program.
+    - findAny () method gives you any random matching one. It might change each time we run program.
+

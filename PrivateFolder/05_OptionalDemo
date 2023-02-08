@@ -1,0 +1,5 @@
+Optional:
+
+Prevent our codes from NullPointerException;
+Optional Class's main purpose is to handle exceptions, when you want to check any product which does not exist;
+         e.g check ID which is not in the data;

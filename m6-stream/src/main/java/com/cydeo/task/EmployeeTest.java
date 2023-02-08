@@ -1,16 +1,35 @@
 package com.cydeo.task;
 
-import java.util.Arrays;
-import java.util.stream.Stream;
+import java.util.List;
 
 public class EmployeeTest {
+    public static void main(String[] args) {
 
-       public static Stream <Employee> readAll (){
-           return Stream.of(
-               new Employee(100, "Mike", "mike@cydeo.com", Arrays.asList("29292929", "303030303")),
-               new Employee(100, "Ozzy", "ozzy@cydeo.com", Arrays.asList("964333", "32389563")),
-               new Employee(100, "Peter", "peter@cydeo.com", Arrays.asList("898989", "35678303"))
-           );
-       }
+        //Print all emails
+        EmployeeData.readAll()
+//                .map(employee -> employee.getEmpEmail()) We can use Lambda as well.
+                .map(Employee::getEmpEmail)
+                .forEach(System.out::println);
+        System.out.println("------------------------------------");
+
+        //Print all phoneNumbers; Print Separate phones and returns Stream <String>
+        EmployeeData.readAll()
+                .flatMap(employee -> employee.getEmpPhoneNumbers().stream())
+                .forEach(System.out::println);
+
+        //Prints all phone numbers and returns Stream List<String>
+         EmployeeData.readAll()
+                .map(Employee::getEmpPhoneNumbers)
+                .forEach(System.out::println);
+
+         EmployeeData.readAll()
+                 .map(Employee::getEmpPhoneNumbers)
+                 .flatMap(List::stream)//we call stream() method directly; why List- because we used List class, List Type.
+                 .forEach(System.out::println);
+
+
     }
 
+}
+
+//What is double column operator = we use when we call method() directly.
