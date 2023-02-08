@@ -1,0 +1,41 @@
+Java Version and Features:
+     =What is the story behind the Java Version updates:
+          = Java 6 - December, 2006;
+          = Java 7 - July, 2011;
+          = Java 8 - March, 2014;
+          = Java 9 - September, 2017;
+          = Java 10 - March, 2018;
+          = Starting from Java 10, Releases are twice a year (September, March);
+     =LTS vs Non-LTS
+          = LTS- stands for Long Term Support;
+          = Non-LTS - non stands for Long Term Support;
+          = Every 3 years version will have a long time support;
+          = If company updates the Java Version use less then 3 year period, they don't have LTS, they will have Non-LTS;
+     = Java is Oracle's product;
+
+Java 9 updates:
+     = Factory Methods for Collections
+        =Factory Methods for List, Set, Map:
+          -We can make List/Set/Map unmodifiable/unchangeable using Set.of(), List.of (), MapOfEntries ();
+     = G1 Garbage Collector structure
+     = Compact Strings
+           - String is combination of chars;
+           - Before Java 9, java was using UTF-16, which is creating each character 2 byte memory;
+           - After Java 9, java uses Latin-1, which is creating for each character 1 byte memory;
+     = Modular System = When you download JDK it comes with Modular System and it makes performance changes a lot behind the scene;
+           - Before Modules everything was Jar File (Group of packages); Jar File means group of packages;
+           - Now Modules still group of packages, but it contains configuration information inside the special file "module-info-Java"
+           - Encapsulating our packages, meaning you are giving certain access to other packages, this is Modular System;
+           Advantages:
+     = Jlink
+           - Java command line tool that is used to generate a custom JRE (JRE is compiler );
+           - Before Java 9 was only one time run environment; Problem was performance;
+           - After Java 9 compiler runs only those classes you used, it is created customer run time environment;
+     = Java Shell (JShell) = Command Line Tools, we can use Terminal and write and test codes for quick purposes for example;
+     = Private Interface Method
+           - In java 7 interface can have only two things: Constant variables and abstract methods;
+           - In java 8 default methods and static methods features added.
+           - In java 9 private methods and private static method features added.
+             - Why java added private methods? - Interface methods might call Private method to avoid verbose and repeated codes;
+     = Stream API Enhancements = New Class Structure, or Date API; They are bringing new objects, classes;
+           -
