@@ -1,0 +1,51 @@
+SOLID PRINCIPLES
+
+1. Why we need Solid Principles?
+    - To make our code more:
+        =understandable;
+        = readable;
+        = testable;
+        = maintainable = you should be able to fix code if required;
+2.  What is Bad Code?
+        - Confusing;
+        - Difficult to change;
+        - Easy to break - you did very little change in the app here and code broke in different part;
+        - Difficult to reuse;
+        - Spaghetti Code = you can't separate the code, you can't add anything, it will broke;
+3. Symptoms of bad Code?
+        -Rigidity -გაშეშება/სიხისტე = it is the tendency to be difficult to change, even in simple ways;
+        -Fragility - tendency of the software to break in many places every time it is changed;
+        -Immobility - it is the inability to reuse software from other projects or from other parts of the same project;
+        -Viscosity - viscosity of the design, and viscosity of the environment(development environment is very slow);
+
+4. Flow of Control = the way compiler (JVM) reads the code (Main Module -> higher module -> lower module).
+5. Source Code Dependency = is the code that we see, when we open the application; Whatever we see as a flow in our own code is a Source code dependency.
+6. If one class directly depends on another class = we call Tightly Coupled;
+7. If classes are not directly depended on another class = we call Loosely Coupled;
+
+Principles
+8. The Single Responsibility Principle
+        - A class/module should have one and only one reason to change;
+        - "Just because you can, does not mean you should";
+        - You should make sure that functionality are seperated, not good to put everything in one class;
+
+9. The Open-Closed Principle
+        - Class/Module should be open for extension, but closed for modification. That means, you should add
+          some functionality instead of making changes to the existing one;
+        - e.g Calculator - Instead of having 3 class Calculator, operation and operationType, better to use multiple classes like
+          Addition/Division/Subtraction/Multiplication/Interface Operation and Calculator.
+          if we want to add Modulus, we will add separate class for it and the rest remains unchanged.
+
+10. The Liskov Substitution Principle
+        - Derived classes must be usable through the base class interface, without the need for the user to know the difference;
+
+11. The interface Segregation Principle
+        - A client should not be forced to implement an interface or it should not depend on a method it does not use;
+        - Better to separate methods and create different interfaces;
+
+12. The Dependency Inversion Principle
+        - Your code should be Loosely Coupled, not Title Coupled
+        - Entities must depends on abstractions, not on concretions.  The high level modules must not depend on the low level modules;
+        - Instead of creating direct connection between one class to another, better to create something in between.
+
+

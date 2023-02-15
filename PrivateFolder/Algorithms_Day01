@@ -1,0 +1,95 @@
+Algorithm is step by step instruction how to solve the problem.
+
+We need performance measures in order to compare Algorithms:
+    = Execution time? it might be different because of computer type;
+    = Number of statements executed? it might be, but not the best because difference might be different because of language type;
+    = Ideal Solution: Expressing running time of an algorithm as a function of input size. f(n) where the input size is n.
+    = When we compare Algorithms we always assume that we have very large data.
+    = Asymptotic Behavior is a method of describing limiting behavior.
+
+Rate of Growth = the rate at which the execution time increases as a function of input is called rate of growth.
+               = The relationship between execution time and Size of Data is called Rate of Growth;
+
+Time Complexity there are two types:
+  - Time complexity - Number of steps required by the algorithm
+  - Space complexity - The amount of space required by the algorithm
+
+Time complexity
+    - If something is constant we call it o(1). e.g pigeon's time of transferring usb;
+
+What is Big O notation
+   - it is a symbolism used in complexity theory, computer science and mathematics to describe the asymptotic behavior of functions.
+   - It tells how fast a function grows or declines, in other words Rate of Growth;
+ Rules:
+    Rule 1: Always worst Case
+    Rule 2: Remove Constants
+    Rule 3 = We concentrate Highest order element
+    Rule 4: Different inputs should have different variables O(n+m), '+' for steps and '*' for nested steps
+ e.g O(n2) = Size of data is n, & number of operations we need to do is n2 (n square);
+ e.g 3long+2is will be O(long) - for n - > input size I'll make " log n" operations, that means "logn" is always less then 'n';
+
+ What can cause TIME in a Code Piece? All of them take constant time 'C'.
+     = Assigning a value to a variables
+     = calling method
+     = Following object reference
+     = comparing two numbers
+     = using arithmetic operations (+, -, *, /)
+     = Accessing a single element of an Array by index
+
+What can cause space complexity?
+     = Variables;
+     = Data Structure
+     = Methods Call
+     = Allocations
+
+Calculation of Big O
+    = Total time = constant c * n = cn = O(n); We remove all constants.
+
+startTime = System.currentTimeMillis();
+endTime = System.currentTimeMillis();
+The difference between entTime and startTime equals time execution;
+There is no need to worry about small times, we only should consider the largest times.
+
+What is Logarithmic complexity?
+    =It is when number of operation is less then input size n.
+    = for(int i=o; i<n; i*=2) -> O(log n) two times increase/decrease;
+    = for(int i=o; i<n; i++) -> O(n) one by one decrease/increase;
+
+Arrays
+   = Arrays use static memory allocation;
+   = each int in java programming language requires 4 bytes;
+   = the variable of Array referencing the starting point of Array in the memory;
+   = reference + 4*indexNumber = Formula to calculate execution time of int Array;
+ Advantages of array:
+        - Simple and easy to use
+        - Faster access to the elements;
+ Disadvantages:
+        - Reallocates all needed memory up front and wastes memory space for indices in the array that are empty;
+          That is fixed Size problem;
+
+Dynamic Arrays
+    = Dynamic arrays are resizable, growable arrays.
+
+There are two implementations of Dynamic Arrays in Java:
+Vector Class
+    = Vector can be used in multi-threaded environment;
+    = Size is increased by %100 if full.
+    = It is Synchronized (only a single thread can access in multi-threaded environment).
+
+ArrayList Class
+    = Size is increased by %50 if full.
+    = If you need multithreading access to data you should prefer ArrayList class.
+
+Big O Operations:
+Two separate Loop = O(n);
+Nested Loop = O(n2)
+numbers, one line codes = constant
+
+Two Sum Problem (Most known Algo question problems at the interview):
+    -
+
+
+
+
+
+

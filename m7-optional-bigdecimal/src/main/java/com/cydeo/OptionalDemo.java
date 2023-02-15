@@ -21,6 +21,11 @@ public class OptionalDemo {
 
         number.stream().filter(x->x>100).forEach(System.out::println);
 
+        /*if (gibNumber.ifPresent){
+        return bigNumber.get()
+        { else {
+         This is how we need to use isPresent() method to prevent throwing directly exception; We don't want our code to stop;
+        */
         //ifPresent - if condition wrong, nothing will be printed     //findAny returns optional
         Optional<Integer> bigNumber = number.stream().filter(x->x>100).findAny();
         bigNumber.ifPresent(System.out::println);

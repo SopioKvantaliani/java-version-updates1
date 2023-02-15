@@ -27,6 +27,9 @@ Java 9 updates:
            - Now Modules still group of packages, but it contains configuration information inside the special file "module-info-Java"
            - Encapsulating our packages, meaning you are giving certain access to other packages, this is Modular System;
            Advantages:
+           -One class dependency might be in different class;
+           - Encapsulating our packages;
+           - File name to create modular is module-info.java;
      = Jlink
            - Java command line tool that is used to generate a custom JRE (JRE is compiler );
            - Before Java 9 was only one time run environment; Problem was performance;
@@ -39,3 +42,13 @@ Java 9 updates:
              - Why java added private methods? - Interface methods might call Private method to avoid verbose and repeated codes;
      = Stream API Enhancements = New Class Structure, or Date API; They are bringing new objects, classes;
            -
+
+
+Java 10 updates:
+
+      = Local variables type inference
+
+      = orElse throw () in Optional Class
+      = Creating unmodifiable collection
+      = Improve container awareness
+      = Application class data sharing

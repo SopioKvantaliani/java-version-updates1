@@ -44,7 +44,7 @@
                    = It is declared with the "static" keyword in a class.
                    = A single copy of each static variable is shared by all instances of the class.
                    = Static variables are stored in static memory.
-                   = Default values of Instance variables:
+                   = Default values of Static variables:
                              = 0 for numbers;
                              = false/true for boolean;
                              = null for object;
@@ -120,4 +120,61 @@
 23. What is the different findAny() and findFirst() (Stream methods)?
     - findFirst() method always gives you first matching one. It will be always same despite the fact how many times we run program.
     - findAny () method gives you any random matching one. It might change each time we run program.
+24. What can be the difference between takeWhile() and limit() methods?
+    - takeWhile() method limiting based on the condition (Predicate; eg. less then 500, less then 200 etc);
+    - limit() does not accept condition and only limits based on the value (eg. limit 1, limit 2);
+25. What is the difference between dropWhile() and takeWhile()?
+    - dropWhile() skipping based on the condition(); skip() method skips based on the value you provide(e.g skip 1, skip 2)
+
+26. What is Encapsulation?
+    - Encapsulation, along with abstraction, polymorphism and inheritance, is one of the four key concepts in
+      object oriented programming (OOP).Encapsulation is data hiding. We use private access modifier to protect data from
+      accessing and from modification without permission. To access encapsulated data we use getter() and setter() methods;
+    - We can set restrictions using setter method
+
+27. What is inheritance?
+    inheritance, along with encapsulation, abstraction and polymorphism is one of the four key concepts in
+    object oriented programming. Inheritance is Is A relationship between classes. We have parent/child classes;
+    We use "extend" keyWord to inherit one class to another; Extended class is super class.
+
+28. What are inheritance types?
+    - MultiLevel Inheritance = Parent -> child -> grandChild
+    - Hierarchical Inheritance =  Parent -> child - > child
+    - Single Inheritance = Parent -> child;
+
+29. Why do we use inheritance?
+    - The most important use of inheritance in Java is code re-usability.
+      The code that is present in the parent class can be directly used
+      by the child class. Method overriding is also known as runtime polymorphism.
+
+30. What is abstraction?
+    - Abstraction is one of the key concept of OPP.
+      It is process of hiding implementation details from the user; Only the functionality is provided;
+      User will have information what the object does, instead of how it does.
+31. What is abstract class?
+    - Abstract class meant to be a parent class. Goad is to provide reusable variables and methods
+    - Abstract keyword is used to create abstract class
+    - An abstract class can not be instantiated;
+    - We can not call any methods from abstract class;
+    - We can not create object of abstract class;
+32. What are the differences between Abstract Classes and Interface?
+        = Interface - Can only have final static variables. Interface can never change its own state;
+        = Abstract class - can have any static or instance variables, mutable or immutable;
+        = A class can implement multiple interfaces;
+        = A class can extend only one abstract class
+        = Interface Can be implemented with the implements keyword. An interface can also extend interfaces.
+        = Abstract class Can only be extended.
+        = Only functional interfaces can use the lambda feature in Java.
+        = Abstract classes with only one abstract method cannot use lambdas.
+        = Interface Can't have constructor.
+        = Abstract class can have constructor;
+        = Interface can have abstract methods, default and static methods and private methods introduced in java 9;
+        = Abstract class can have any kind of methods;
+
+
+
+
+
+
+
 
