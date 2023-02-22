@@ -72,7 +72,7 @@
     - Objects are the instance variables of class.
     - Objects are stored through references.
     - Objects are created with new key word.
-    - Every object ahs its own memory.
+    - Every object has its own memory.
 
 
 7. What is state and behavior of an object?
@@ -152,7 +152,7 @@
       It is process of hiding implementation details from the user; Only the functionality is provided;
       User will have information what the object does, instead of how it does.
 31. What is abstract class?
-    - Abstract class meant to be a parent class. Goad is to provide reusable variables and methods
+    - Abstract class meant to be a parent class. Goal is to provide reusable variables and methods
     - Abstract keyword is used to create abstract class
     - An abstract class can not be instantiated;
     - We can not call any methods from abstract class;
@@ -171,10 +171,54 @@
         = Interface can have abstract methods, default and static methods and private methods introduced in java 9;
         = Abstract class can have any kind of methods;
 
+33. What is Polymorphism?
+       = Polymorphism is one of the key concept of OOP.
+       = The word polymorphism means having many forms, and occurs when we have many classes that are related to each other by inheritance.
+         inheritance allows us to inherit attributes and methods from another class.  Polymorphism uses those methods to perform different tasks.
+       = A real- life example of polymorphism is a person who at the same time can have different characteristics.
 
+34. What are the types of Polymorphism?
+      = There are two main types of polymorphism i.e. runtime polymorphism and compile-time polymorphism.
+        Runtime polymorphism is achieved through method overriding, and
+        compile-time polymorphism is achieved through method overloading.
 
+35. Give a real world example?
+      = A real-life example of polymorphism is a person who at the same time can have different characteristics.
+        A man at the same time is a father, a husband, and an employee. So the same
+        person exhibits different behavior in different situations.
 
+36. Why and when do we need Polymorphism?
+      = Code reuse = it enables you to write more flexible and reusable code by allowing you to treat
+        objects of different types as if they were the same type.
+      = Method overriding: Polymorphism allows us to override methods in a superclass, providing a specific implementation in a subclass;
+      = Interface implementation:  it allows us to define an interface and implement it in multiple classes.
+      = Flexibility = Flexible code by separating the interface of an object from its implementation.
+37. Procedural programming?
+      = Procedural programming is about writing procedures or methods that perform operations on the data.
+        it is linear and executes from top to bottom.
 
+38. Benefits of OOP over Procedural Programming?
+      = Modularity or re-usability: OOP allows you to modularize your code by encapsulating related data and behavior into objects;
+      = Abstraction: OOP allows you to create abstract data types that hide their implementation details.
+      = Inheritance and polymorphism: OOP provides inheritance, which allows you to create new classes that are based
+        on existing classes and polymorphism, which allows you to treat object of different classes as if they are the same type.
+      = Encapsulation: OOP promotes encapsulation, which means that the internal workings are hidden from the outside world. This
+        provides better security and reducing the complexity of your code.
+      = Code organization: OOP provides a way to organize your code into logical, self contained units, making it easier to manage and understand.
 
+39. Disadvantage of OOP?
+      = Complexity: OOP can be complex to read and understand for the developers;
+      = It might be overhead in general, that means to be a negative factor in programming as it can lead to slower performance, increased
+        memory usage and other issues, that can make a program less efficient of effective.
 
+40. There are 2 type of casting in Polymorphism:
+     = Down Casting which means to cast larger reference type to smaller reference type  = that done explicitly;
+     = Up Casting which means to smaller reference type to larger reference type = that is done implicitly;
+     = There must me Is A relationship between the object type and reference type to be casted.
 
+41. Use of "super" and "this" Key Words?
+     = They are special keywords that are used to refer to different objects or methods within a class hierarchy.
+     = "Super" is used to refer superclass of the current class. 'Super' keyword is used to call a constructor or method of the superclass from a subclass.
+     = "this" is used to refer to a current object instance of a class. Also it calls the methods or constructors within the same class.
+     = Overall they are both important keywords in Java that help to manage class hierarchy and distinguish between class-level and
+       instance-level variables and methods.

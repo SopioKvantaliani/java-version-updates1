@@ -1,0 +1,62 @@
+How the internet works?
+    WebBrowser -> Internet ->Request for web page - Web Server
+    The only purpose of the web browsers is to interpret data;
+    right click and click "view page source"
+    right click and "inspect"
+
+Web Application Architecture consist in 3 layers:
+    = Front End (What we see - HTML, CSS and Javascript)
+    = Back End (Business Logic)
+    = DataBase ()
+
+Database:
+    = database is an organized collection of data
+    = Storage that stores information in an organized manner, that is easy to reach when needed.
+
+What is HTML:
+    = HTML stand for HyperText Markup Language;
+    = HTML is not a programming language, it is a markup language.
+    = A markup language is used to control the presentation of the data.
+    = HTML is often names as the structure, or the skeleton of a WebApp.
+How to write HTML Files?
+    = .html extension tells your browser that this is an html file, treat it as such.
+    = Web Browsers are HTML files reader mostly.
+
+What is CSS, Why we need it?
+   = You give style to HTML using CSS;
+   = you can not create element wth CSS. you can only give style to an existing element.
+   = e.g. Skeleton is HTML and making Appearance is HTML+CSS;
+
+JavaScript
+   = JavaScript is a scripting language.
+   = Allows your website to actually do things, and have behavior.
+    e.g. "Do some calculations";
+         "Load new data from a page";
+         "change color when user clicks to come specific button";
+
+Web Element is each of piece on the web page. Basically, every single box, button, text, image, link, etc you see on the webpage is webElement;
+Tags <tagName>   in between text   </tagName>
+Tags are how HTML defines different areas and sections of the document;
+
+Structure of HTML:
+
+Title = name on the tab;
+HTML headings are defined with the <h1></h1> to <h6></h6>;
+h1 is used for main heading;
+h2 is used for subheadings and so forth it becomes smaller and smaller;
+command S = refresh changes
+Lorem ipsum = placeholder text; lorem +tab
+
+Line Breaks & Horizontal Rules:
+hr +tab = Printed Line
+br/> = Line break tag (new Line)
+</p> = gap between lines
+<strong> Bold Text </strong>
+<em><u> underlined Italic </u></em>
+
+HTML Attributes:
+<hr size = "50px" />  - attribute structure;
+<ol> </ol> - Numbers and New lines (Order List)
+<li> </li> - New Lines and numbers (1.2.3.4.)
+<!-- this is Comment Line-->  When we want to comment
+<img> src:  = Pictures
