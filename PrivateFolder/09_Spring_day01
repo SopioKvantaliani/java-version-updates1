@@ -1,1 +1,75 @@
 Spring
+(Rod Johnson = Guy who created Spring)
+
+1. What is Framework?
+    = It is a set of common software functionalities that provides a foundation structure for developing an application.
+        Developer can take it and use it.
+    = Framework is bunch of components;
+        When we say FrameWork developer should follow some ready steps and use the library at the same time. Not only library.
+    = An application framework eases the effort of writing an application by taking out the effort of writing all the
+        program code from scratch.
+    = Learning path - learn component first and then start implementation; We need to understand firstly how each component works;
+
+2. If many companies using Spring, how the application becomes unique?
+    = Business logic is the key part that makes each application unique.
+
+3. Business Logic Code
+    = Something that is unique for each company;
+
+4. Spring Ecosystem
+    = Spring calls themself EcoSystem, because they provide 22 different projects, and each of them might be considered as separate framework.
+    = Spring Ecosystem is growing so fast; It has big and supportive community, they are ready to help you.
+
+6. Coupling - is a usage of an object by another object; if one class has dependency on another class; It simply means that one object requires another object
+   to complete its assigned task.
+   There are two types of coupling:
+    = Tight Coupling
+        - Question to identify if it is tightly couples or not = If we need new monitor, do we need to change something? if yes it is tightly (Spring-00 example);
+        - A group of classes are highly dependent on one another.
+    = Loose Coupling
+         - An object gets the object to be used from external sources.
+         - Reduces the dependencies of a class that uses the different classes directly.
+         - Example of phone case and phone itself. Without phone case you can have phone, but without batters your phone is dead.
+
+5. Spring Core
+    = Spring core is the part of the Spring framework providing the foundational mechanism used by Spring to integrate into apps.
+    = Spring says, hey developers you don't create any objects any more, I'll create object and I will manage it for you. Whenever you need it, I will give you;
+    = Spring core says, I am taking responsibility of creating objects and managing the objects. This principal calls Inversion of Control (IoC);
+
+5.1 - What is IoC (Inversion ცვლილება/გადატრიალება of Control)?
+    = Spring is taking the control creating and managing objects, not us;
+    = We allow the framework to control the application and its code. There is no need to create all the time new objects, IoC takes care of that.
+
+6. How We will implement Spring Core? How we will create IoC?
+
+6.1 - POJOs - is application classes (You need to create Java Classes);
+6.2 - Spring Container - You need to create Container. This container is the place where Spring creates and manage all the objects
+                         for you whatever you describe in the configuration; This container will hold all the object that application
+                         needs; Container is a structure
+6.3 - Configuration - Spring needs configuration, because it will manage only classes and object whatever developers describe in configuration.
+                       e.g. you have in total 1000 different class, spring needs to know the exact configuration it need to take care;
+                       It is the place where we define which objects should be created from which classes.
+6.4 - After following these 3 steps, you are Done.
+
+7. Spring Bean - Spring calls Bean to Java Object.
+     - A Bean is an object that is created and managed by Spring Container.
+     - It is regular object, just created and managed by Spring.
+     - Spring beans are created from POJOs.
+
+8. By using two interfaces we can create container of IoC:
+   - Bean Factory
+   - Application Context
+   8.1 They are both interfaces
+   8.2 org.springframework = this is library from where comes these two interfaces.
+
+9. Creating in Practice:
+9.1 adding new dependency Spring Context (right click+generate+search Spring Context and add latest version. update pom.xml file)
+9.2 Create ApplicationContext container -//  ApplicationContext container = new AnnotationConfigApplicationContext();
+    9.2.1 Spring Container is sometimes called Spring Context
+9.3 Create Configuration: There are two ways to add beans in the Spring Context.
+    9.3.1 Using the @Bean annotation
+    9.3.2 stereotype annotation
+
+9.4 Steps to create Configuration:
+    - Define a configuration class ( we need to use annotation with @Configuration).
+    - Add Method in the Configuration class and annotate the method with the @Bean annotation.

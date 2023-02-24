@@ -222,3 +222,95 @@
      = "this" is used to refer to a current object instance of a class. Also it calls the methods or constructors within the same class.
      = Overall they are both important keywords in Java that help to manage class hierarchy and distinguish between class-level and
        instance-level variables and methods.
+
+42. What are Solid Principles of OOP?
+    = Single Responsibility Principal - You should make sure that functionality are seperated, not good to put everything in one class;
+    = The Open-Closed Principle - Class/Module should be open for extension, but closed for modification. That means, you should add
+                                  some functionality instead of making changes to the existing one; calculator example, better to create
+                                  separate class for each operator, rather than put everything in one class.
+    = The Liskov Substitution Principle
+              - In simpler terms, this means that any method or property that works on the superclass should also work on
+                its subclasses, without any unexpected behavior or errors.
+    = The interface Segregation Principle
+              - A client should not be forced to implement an interface or it should not depend on a method it does not use;
+              - Better to separate methods and create different interfaces;
+    = The Dependency Inversion Principle
+            - Your code should be Loosely Coupled, not Title Coupled;
+            - Instead of creating direct connection between one class to another, better to create something in between.
+
+43. What is the superclass of every class in Java?
+    = the superclass of every class is the Object class. The Object class is the root of the class hierarchy, and provides a set of
+      common methods that are inherited by all other classes in Java. Some of the common methods provided by the Object class include:
+
+      equals(Object obj) : Compares the object for equality with the given object
+      toString() : Returns a string representation of the object
+      hashCode() : Returns a hash code value for the object
+      getClass() : Returns the class object for the object
+
+44.What is Object class in Java programming language?
+    =the Object class is the root of the class hierarchy. It is a built-in class provided by the Java platform, and is located in the java.lang package.
+
+45. Do you remember some of the non-static methods in Object Class?
+     = equals(Object obj): This method is used to compare two objects for equality. It returns true if the objects are equal; otherwise, it returns false.
+     = hashCode(): This method returns a hash code value for the object. This value is used by hash-based data structures, such as hash maps and hash sets,
+       to store and retrieve objects.
+     = toString(): This method returns a string representation of the object. The string representation can be used for debugging or logging purposes.
+
+46. Explain the toString() method?
+     = it returns string representation. e.g. Person class, we declared person name and age, we should override toString () method, in order to be able to print
+        this object in another class we create.
+47. What is the use of equals method in Java? How to override it?
+     = equals method compares two object to each other, if they are the same or not. e.g person class, declared person name and age. By overriding
+        equals method we can compare persons to each other by name and age and we can say if they are the same or not.
+
+        public class Person {
+            private String name;
+            private int age;
+
+            public Person(String name, int age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            @Override
+            public boolean equals(Object obj) {
+                if (obj == this) {
+                    return true;
+                }
+
+                if (!(obj instanceof Person)) {
+                    return false;
+                }
+
+                Person other = (Person) obj;
+                return this.name.equals(other.name) && this.age == other.age;
+            }
+48. What is the difference between == and equals ()?
+   - == operator compares if the objects are same in the memory, if yes true, if not false;
+   - equals() method compared content and not the location. if the content is same, returns true, if not, returns false.
+   String s1 = "hello";
+   String s2 = "hello";
+   String s3 = new String("hello");
+
+   System.out.println(s1 == s2); // true
+   System.out.println(s1 == s3); // false
+   System.out.println(s1.equals(s3)); // true
+
+49. Why do we need Wrapper Classes?
+    = Wrapper classes in java provide a way to represent primitive data types as objects. The main reasons for using wrapper classes are:
+      1. To treat primitive types as objects: Java is an object-oriented language, and some APIs require objects to be passed as parameters.
+      2.To provide utility methods: Wrapper classes provide many useful methods for working with primitive types that are not
+        available on the primitive types themselves. For example, the Integer class provides methods to
+        convert a string to an integer, or to format an integer as a string.
+      3.To provide null values: Primitive types cannot be set to null, whereas objects can. By using wrapper classes,
+        we can create nullable objects that can be set to null when no value is present.
+      4.To use in collections: Collections in Java can only hold objects, not primitive types.
+
+50. How do you convert a String to Integer?
+    = We can use valueOf () method or parse () method.
+    Code Example:
+
+        String str = "1234";
+        Integer num = Integer.parseInt(str);
+        Integer num2 = Integer.valueOf(str);
+
